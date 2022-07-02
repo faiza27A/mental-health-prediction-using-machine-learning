@@ -1,0 +1,72 @@
+{% extends 'basepagetemplate.html' %}
+{% block body_block %}
+<div class = "project-header d-flex flex-column justify-content-center">
+    <div class="text-center text-white">Our Project</div>
+</div>
+
+<div class="container mt-lg-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="title text-center mt-4" style="color:darkcyan">
+                Mental health Prediction Using Machine Learning
+            </div>
+            <div class="overview p-3 text-center ">
+                The main objective of this project is to build a machine learning model to accurately predict whether or not employees the  in the dataset have recommend of treatment or not .
+    
+            </div>
+            <hr>
+            <div class="title  mt-4">
+                Details about the dataset
+            </div>
+            <div class="overview p-3  ">
+                This dataset is originally from the National Institute of IT Technology. The objective of the dataset is to diagnostically predict whether or not a employee has mental health, based on certain diagnostic measurements included in the dataset. 
+                <div><a href="{{url_for('static',filename='/pdf/datasets.csv')}}">Download the Dataset</a></div>
+            </div>
+            <div class="title  mt-4" style="color:darkgoldenrod">
+                Modules in our Project:
+            </div> 
+            <div class="overview p-3  ">
+                <li> Exploratory Data Analysis : It is an approch to analyse the explotary data with visual techninices  it used to trends or patterns with help of the statsical summary and graphically.
+
+                <li> Data Preprocessing : Preprocessing in data mining technique which used to transform the raw data in a useful and efficient manner.
+                <li> Feature Engineering : Process of selecting,manipulating,and transforming raw data into features that can be used in supervised learning.
+                <li> One Hot Encoding : It is a common way of Preprocessing categorical features for machine learning models.
+                <li> Base Models : A baseline model is essentically a simple model that acts as a reference in machine learning project .
+                <li> Model Tuning : Tuning is the process of maximizing a model's performance without overfitting or creating too high of a variance.
+                <li> Comparison of Final Models : It is compared on basics of Time complexity, Space complexity, Sample complexity,Parametricity.
+                <li> Reporting : when a client is reported ,their case is first reviewed by our automated Disciplinary System.
+                    
+                    <div><a href="https://colab.research.google.com/drive/1uDp7Aj5QdpKqEJnG7orQslbQeBjci71E?usp=sharing">Link to Project Implementation (Colab Notebook)</a></div>
+            
+                    <div><a href="{{url_for('static',filename='/pdf/presentation.pdf')}}">Link to presentation (PPT) </a></div>
+                </div>
+            
+            
+            </div>
+        
+        </div>
+    </div>
+</div>
+<div class="container-fluid team-container mt-3 mb-3 p-3">
+    <div class="title  text-center">
+        <a href = "/form"> Predict the result for new Data</a>
+    </div>
+    </div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="title">
+                Ready to launch your next projects?
+            </div>
+            <div class="overview pt-3 pb-3 ">
+                Let us call. Our team of experienced creatives and developers will listen, and provide a service of high quality.
+            </div>
+
+        </div>
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="ml-lg-4"><button type="button" class="btn btn-info"><a class="nav-link" href="{{url_for('contact')}}" style="color:black">contact us</a></button></div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

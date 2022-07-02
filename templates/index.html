@@ -1,0 +1,143 @@
+{% extends 'basepagetemplate.html' %}
+{% block body_block %}
+<!-- Header section -->
+<div class = "welcome-header d-flex flex-column justify-content-center">
+    <div class="text-center text-white ">Welcome</div>
+</div>
+<!-- end of header section -->
+
+<!-- Project Overview section -->
+<div class = "container">
+    <div class ="row">
+        <div class="col-12 text-center">
+            <div class="title pt-4 mt-4" >
+                Prediction of Mental Health with Logistic Regression 
+            </div>
+            <div class="overview p-3" >
+                We’ll be using Machine Learning to predict whether a person needs a treatment for his/her Mental Health at the Workplace,based on information about the patient such as Age,Work interface,Family History.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of header section -->
+
+
+<!-- team members brief-->
+<div class = "container-fluid mt-5 p-5 team-container-brief">
+    <div class="row">
+        <div class = "col-12 col-lg-6 pl-lg-5">
+            <div class="text-center text-lg-right"><img src="/static/images/team.jpg" class ="team-img "></div>
+        </div>
+        <div class=" col-12 col-lg-6 pr-lg-3">
+            <div class="title ">
+                We see the opportunity & challenges to approach digital products as experiences
+            </div>
+            <div class="overview p-3 " >
+                Our dedicated team of members
+                <div class = "d-flex flex-row justify-content-between pt-3">
+                    <div>
+                        <li>Faiza Attar</li>
+                    </div>
+                    <div>
+                        <li>Naziya sultana Shaik</li>
+                    </div>
+                </div>
+                <div class = "d-flex flex-row justify-content-between pt-3">
+                    <div>
+                        <li>Afreen syed</li>
+                    </div>
+                    <div>
+                        <li>Samreen khanam Mayana</li>
+                    </div>
+                </div>
+            </div>
+            <div class="team-more-button text-center">
+            
+            <button type="button" class="btn btn-light"><a  href="{{url_for('about')}}" style="color:black">More details..</a></button>
+            
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- end of team members-->
+
+<!-- Tools section -->
+
+<div class = "container">
+    <div class ="row mt-4">
+        <div class="col-12 text-center">
+            <div class="title pt-4" >
+                Tools and Technologies used
+            </div>
+            <div class="overview p-3" >
+                The projects implemented using the python language, the following modules and frameworks are used in developing the project.
+            </div>
+        </div>
+    </div>
+    <div class = "row mt-4">
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/numpy2.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">Numpy is a python library used for working with arrays it also has functions for working in domain of linear algebra,Fourier transforms,and matrices.It is an open source project and you can use it Freely.</p>
+                </div>
+              </div>
+        </div>
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/pandas.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">pandas can be used in a python script,a jupter note book.Active projects used the pandas data analysis library in various ways that can show you how to inspect your own data set and built your own applications. </p>
+                </div>
+              </div>
+        </div>
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/matplotlibpng.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">Matplot is a cross-platform, data visulatization and graphical plotting library for python and its numerical extension numpy.As such ,it offers viable open source alternative to MATLAB.Matplotlib's API's are used for embed plots in GUI applications.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class = "row mt-4">
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/flask.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">Flask is a web application framework written in python Flask is based on Werkzeug,WSGI toolkit and jinja template engine and various technologies that allow you to built a web application.</p>
+                </div>
+              </div>
+        </div>
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/bootstrap1.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">Powerful  extensible and features-packed frontend toolkit.Build and customize with Saas, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScripts plugins.</p>
+                </div>
+              </div>
+        </div>
+        <div class = "col-12 col-lg-4 col-md-2">
+            <div class="card mb-3 text-center">
+                <img src="/static/images/Scikit_learn_logo_small.png" class="tool-image">
+                <div class="card-body">
+                  <p class="card-text">Scikit-learn is a prefered python library by researchers,and seasoned data scientists to apply robust and easy to use implemenation of popular machine learning alogrithms .</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center pb-5">
+            <button type="button" class="btn btn-info">
+                <a class="nav-link" href="{{url_for('project')}}" style="color:black">More Details..</a>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- end of tools section -->
+
+
+{% endblock %}
